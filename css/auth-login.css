@@ -1,0 +1,177 @@
+
+        body {
+            font-family: 'Instrument Sans', sans-serif;
+            background: linear-gradient(135deg, rgba(10, 15, 26, 0.9), rgba(10, 15, 26, 0.7)), url('../images/candlestick-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-blend-mode: overlay;
+            color: #e2e8f0;
+            margin: 0;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        .card {
+            background: rgba(30, 41, 59, 0.9);
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: #04c22d;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .form-group {
+            margin-bottom: 1.25rem;
+        }
+        .form-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            color: #94a3b8;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            background: #334155;
+            border: 1px solid #475569;
+            border-radius: 0.5rem;
+            color: #e2e8f0;
+            font-size: 1rem;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        .form-group input:focus {
+            border-color: #04c22d;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+            outline: none;
+        }
+        .error-message {
+            color: #f87171;
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 1.25rem;
+        }
+        .checkbox-group label {
+            display: flex;
+            align-items: center;
+            color: #94a3b8;
+            font-size: 0.875rem;
+        }
+        .checkbox-group input {
+            margin-right: 0.5rem;
+        }
+        .forgot-password {
+            color: #04c22d;
+            font-size: 0.875rem;
+            text-decoration: none;
+        }
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 0.75rem;
+            background: #04c22d;
+            color: #1e293b;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .submit-btn:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+        }
+        .signup-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-size: 0.875rem;
+            color: #94a3b8;
+        }
+        .signup-link a {
+            color: #04c22d;
+            text-decoration: none;
+        }
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+        .ban-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            display: {{ session('error') ? 'flex' : 'none' }};;
+            align-items: center;
+            justify-content: center;
+            z-index: 50;
+        }
+        .ban-modal-content {
+            background: #1e293b;
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            width: 90%;
+            max-width: 350px;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .ban-modal-content h3 {
+            color: #f87171;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .ban-modal-content p {
+            color: #94a3b8;
+            margin-bottom: 1.5rem;
+        }
+        .ban-modal-content button {
+            width: 100%;
+            padding: 0.75rem;
+            background: #04c22d;
+            color: #1e293b;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .ban-modal-content button:hover {
+            background-color: #059669;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 640px) {
+            .title {
+                font-size: 1.5rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            .form-group input {
+                padding: 0.5rem 1rem;
+            }
+            .submit-btn {
+                padding: 0.6rem;
+            }
+        }
