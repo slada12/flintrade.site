@@ -1,0 +1,950 @@
+<!DOCTYPE html><html lang="en" class="h-full"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx">
+    <meta name="description" content="#1 Trading Platform">
+    <title>Flintrade - Trading</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/hqSAzpjl8A8SypGWOoXUVk4s3CfN7E9QleenykTu.png" type="image/x-icon">
+    <!-- Fonts -->
+    <link href="css/css2_1.css" rel="stylesheet">
+    <link href="css/css2.css" rel="stylesheet">
+    <!-- Icons -->
+    <link href="css/all.min.css" rel="stylesheet">
+    <link href="css/remixicon.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/user-tradesignal.css">
+    <link rel="stylesheet" href="css/user-referral.css">
+    <link rel="stylesheet" href="css/user-profile.css">
+    <link rel="stylesheet" href="css/user-kyc.css">
+    <link rel="stylesheet" href="css/user-history.css">
+    <link rel="stylesheet" href="css/user-withdrawal.css">
+    <link rel="stylesheet" href="css/user-deposit.css">
+    <link rel="stylesheet" href="css/user-notifications.css">
+    <link rel="stylesheet" href="css/user-dashboard.css">
+    <link rel="stylesheet" href="css/user-trading.css">
+    <link rel="stylesheet" href="css/app-layouts.css">
+    <link rel="stylesheet" href="css/user-cryptoswap.css">
+    <link rel="stylesheet" href="css/user-copytrading.css">
+    <link rel="stylesheet" href="css/user-coursesub.css">
+    <link rel="stylesheet" href="css/user-coursescourse.css">
+    <link rel="stylesheet" href="css/user-fundtransfer.css">
+    <link rel="stylesheet" href="css/user-investment.css">
+    <link rel="stylesheet" href="css/user-updatedbackend.css">
+    <!-- Scripts -->
+    <script src="js/chart.js"></script>
+    <script src="apexcharts"></script>
+    <script src="sweetalert2%4011"></script>
+
+    <!-- QR Code Library with Fallback -->
+    <script src="js/qrcode.min.js" onerror="loadLocalQRCodeScript()"></script>
+    <script>
+        function loadLocalQRCodeScript() {
+            const script = document.createElement('script');
+            script.src = '/js/qrcode.min.js';
+            script.onload = () => console.log('Local QRCode library loaded successfully');
+            script.onerror = () => console.error('Failed to load local QRCode library');
+            document.head.appendChild(script);
+        }
+    </script>
+    <link rel="preload" as="style" href="https://flintrade.com/build/assets/app-lkaksZOy.css"><link rel="modulepreload" href="https://flintrade.com/build/assets/app-C9OVZvWe.js"><link rel="stylesheet" href="css/app-lkaksZOy.css"><script type="module" src="js/app-C9OVZvWe.js"></script></head>
+<body class="bg-dark-900 text-dark-50">
+    <div id="app">
+        <!-- Sidebar -->
+                    <aside class="sidebar" id="sidebar">
+                <div class="logo-container">
+                    <img src="images/YeaC4nIpkrjgQMcXPLY23dCyEZtQ9EQqe78864i2.png" alt="Logo" class="" width="200px">
+                    <button class="toggle-btn" id="toggleSidebar">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </button>
+                </div>
+
+                <nav>
+                    <span class="nav-section-title">Main</span>
+                    <a href="https://flintrade.com/user/dashboard" class="">
+                        <i class="ri-dashboard-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+
+                    <a href="https://flintrade.com/user/trading" class="active">
+                        <i class="ri-exchange-line"></i>
+                        <span>Trading</span>
+                    </a>
+
+                                        <a href="https://flintrade.com/user/investments" class="">
+                        <i class="ri-line-chart-line"></i>
+                        <span>Investments</span>
+                    </a>
+                    
+                                        <a href="https://flintrade.com/user/copy-trading" class="">
+                        <i class="ri-share-line"></i>
+                        <span>Copy Trading</span>
+                    </a>
+                    
+                    <span class="nav-section-title">Payments</span>
+                    
+                    <a href="https://flintrade.com/user/payments/deposit" class="">
+                        <i class="ri-wallet-3-line"></i>
+                        <span>Deposit</span>
+                    </a>
+
+                    <a href="https://flintrade.com/user/payments/withdrawal" class="">
+                        <i class="ri-bank-card-line"></i>
+                        <span>Withdrawal</span>
+                    </a>
+
+                    <a href="https://flintrade.com/user/payments/history" class="">
+                        <i class="ri-history-line"></i>
+                        <span>Payment History</span>
+                    </a>
+
+                    <a href="https://flintrade.com/user/payments/kyc" class="">
+                        <i class="ri-shield-check-line"></i>
+                        <span>KYC Verification</span>
+                    </a>
+
+                    <span class="nav-section-title">Learning</span>
+                                        <a href="https://flintrade.com/user/trade-signals" class="">
+                        <i class="ri-signal-tower-line"></i>
+                        <span>Trade Signals</span>
+                    </a>
+                    
+                                        <a href="https://flintrade.com/user/courses/subscriptions" class="">
+                        <i class="ri-graduation-cap-line"></i>
+                        <span>Course Subscriptions</span>
+                    </a>
+                    
+                                        <a href="https://flintrade.com/user/courses" class="">
+                        <i class="ri-book-line"></i>
+                        <span>My Courses</span>
+                    </a>
+                    
+                    <span class="nav-section-title">Community</span>
+                                        <a href="https://flintrade.com/user/referrals" class="">
+                        <i class="ri-team-line"></i>
+                        <span>Referrals</span>
+                    </a>
+                    
+                                        <a href="https://flintrade.com/user/crypto-swap" class="">
+                        <i class="ri-exchange-dollar-line"></i>
+                        <span>Crypto Swap</span>
+                    </a>
+                    
+                    <span class="nav-section-title">Account</span>
+                    <a href="https://flintrade.com/user/notifications" class="">
+                        <i class="ri-notification-3-line"></i>
+                        <span>Notifications</span>
+                    </a>
+
+                    <a href="https://flintrade.com/user/profile" class="">
+                        <i class="ri-user-3-line"></i>
+                        <span>Profile</span>
+                    </a>
+                </nav>
+
+                <div class="sidebar-footer">
+                    <form action="https://flintrade.com/auth/user/logout" method="POST">
+                        <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">                        <button type="submit" class="logout-btn">
+                            <i class="ri-logout-box-r-line"></i>
+                            <span>Logout</span>
+                        </button>
+                    </form>
+                </div>
+            </aside>
+            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+        
+        <!-- Main Content -->
+        <div class="main-content" id="mainContent">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-left">
+                    <button class="menu-btn" id="menuBtn">
+                        <i class="ri-menu-line"></i>
+                    </button>
+
+                    <h1 class="hidden text-lg font-semibold md:block">Trading</h1>
+                </div>
+
+                <div class="header-right">
+                    <div class="balance-card">
+                        <div class="balance-icon">
+                            <i class="ri-wallet-3-line"></i>
+                        </div>
+                        <div class="balance-info">
+                            <span class="balance-label">Live Balance</span>
+                            <span class="balance-amount">$0.00</span>
+                        </div>
+                    </div>
+
+                    <a href="https://flintrade.com/user/payments/deposit" class="deposit-btn">
+                        <i class="ri-add-line"></i>
+                        <span>Deposit</span>
+                    </a>
+
+                    <div class="user-menu">
+                        <img src="public.html" alt="User Avatar" class="user-avatar-sm" onerror="this.onerror=null; this.src='https://flintrade.com/images/avatar.jpg'">
+                        <span class="hidden user-name-sm md:inline">John doe</span>
+
+                        <div class="user-dropdown">
+                            <div class="dropdown-header">
+                                <div class="dropdown-user">
+                                    <img src="public.html" alt="User Avatar" class="dropdown-user-avatar" onerror="this.onerror=null; this.src='https://flintrade.com/images/avatar.jpg'">
+                                    <div class="dropdown-user-info">
+                                        <div class="dropdown-user-name">John doe</div>
+                                        <div class="dropdown-user-email">johndoe@gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-menu">
+                                <a href="https://flintrade.com/user/profile" class="dropdown-item">
+                                    <i class="ri-user-3-line"></i>
+                                    <span>Profile</span>
+                                </a>
+                                <a href="https://flintrade.com/user/notifications" class="dropdown-item">
+                                    <i class="ri-notification-3-line"></i>
+                                    <span>Notifications</span>
+                                </a>
+                                <a href="https://flintrade.com/user/payments/history" class="dropdown-item">
+                                    <i class="ri-history-line"></i>
+                                    <span>Payment History</span>
+                                </a>
+                                <a href="https://flintrade.com/user/referrals" class="dropdown-item">
+                                    <i class="ri-team-line"></i>
+                                    <span>Referrals</span>
+                                </a>
+                            </div>
+
+                            <div class="dropdown-footer">
+                                <form action="https://flintrade.com/auth/user/logout" method="POST">
+                                    <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">                                    <button type="submit" class="w-full dropdown-item text-danger-400">
+                                        <i class="ri-logout-box-r-line"></i>
+                                        <span>Logout</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="container">
+                    <div class="dashboard-container">
+                <!-- Welcome Section -->
+        <div class="welcome-section">
+            <div class="welcome-content">
+                <h1 class="welcome-title">Welcome to Trading, John doe!</h1>
+                <p class="welcome-subtitle">Manage your trades and explore market opportunities.</p>
+            </div>
+            <div class="quick-actions">
+                <a href="https://flintrade.com/user/payments/deposit" class="quick-action-btn deposit-btn" style="background-color: #04c22d">
+                    <i class="fas fa-plus-circle"></i> Deposit
+                </a>
+            </div>
+        </div>
+
+        <!-- Balances Cards -->
+        <div class="balances-grid">
+            <div class="balance-card live-balance">
+                <div class="balance-icon">
+                    <i class="fas fa-wallet"></i>
+                </div>
+                <div class="balance-info">
+                    <h3 class="balance-title">Live Balance</h3>
+                    <p id="live-balance" class="balance-amount">$0.00</p>
+                </div>
+            </div>
+            <!--<div class="balance-card demo-balance">
+                <div class="balance-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="balance-info">
+                    <h3 class="balance-title">Demo Balance</h3>
+                    <p id="demo-balance" class="balance-amount">$10,000.00</p>
+                </div>
+            </div>-->
+        </div>
+
+        <!-- Chart and Trade Panel -->
+        <div class="chart-trade-container">
+            <!-- Chart Section -->
+            <div class="chart-section">
+                <div class="chart-header">
+                    <h3>Market Chart</h3>
+                    <div class="timeframe-controls">
+                        <button onclick="setTimeframe('1')" class="timeframe-btn active">1m</button>
+                        <button onclick="setTimeframe('5')" class="timeframe-btn">5m</button>
+                        <button onclick="setTimeframe('15')" class="timeframe-btn">15m</button>
+                        <button onclick="setTimeframe('60')" class="timeframe-btn">1h</button>
+                    </div>
+                </div>
+                <div id="tradingChart" class="chart-container"></div>
+                <div id="chartError" class="hidden chart-error">Chart failed to load. Check console for details.</div>
+            </div>
+
+            <!-- Trade Panel -->
+            <div class="trade-panel">
+                <div class="trade-panel-header">
+                    <h3>Trade Now</h3>
+                    <div class="account-switch">
+                        <span class="account-label">Account:</span>
+                        <div class="toggle-switch">
+                            <input type="checkbox" id="accountTypeToggle" class="toggle-input">
+                            <label for="accountTypeToggle" class="toggle-label">
+                                <span class="toggle-text">Live</span>
+                                <!--<span class="toggle-text">Demo</span>-->
+                                <span class="toggle-handle"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <form id="tradeForm" action="https://flintrade.com/user/trading/store" method="POST" class="trade-form">
+                    <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">                    <div class="form-group">
+                        <label class="form-label">Asset</label>
+                        <select name="asset" id="tradeAssetSelect" required="" class="form-select">
+                            <option value="BTCUSD">BTC/USD</option>
+                            <optgroup label="Forex">
+                                <option value="EURUSD">EUR/USD</option>
+                                <option value="GBPUSD">GBP/USD</option>
+                                <option value="USDJPY">USD/JPY</option>
+                                <option value="AUDUSD">AUD/USD</option>
+                                <option value="USDCAD">USD/CAD</option>
+                                <option value="EURJPY">EUR/JPY</option>
+                            </optgroup>
+                            <optgroup label="Crypto">
+                                <option value="BTCUSD">BTC/USD</option>
+                                <option value="ETHUSD">ETH/USD</option>
+                                <option value="XRPUSD">XRP/USD</option>
+                                <option value="LTCUSD">LTC/USD</option>
+                                <option value="ADAUSD">ADA/USD</option>
+                                <option value="BNBUSD">BNB/USD</option>
+                                <option value="SOLUSD">SOL/USD</option>
+                                <option value="DOTUSD">DOT/USD</option>
+                                <option value="AVAXUSD">AVAX/USD</option>
+                                <option value="LINKUSD">LINK/USD</option>
+                                <option value="MATICUSD">MATIC/USD</option>
+                                <option value="DOGEUSD">DOGE/USD</option>
+                                <option value="SHIBUSD">SHIB/USD</option>
+                                <option value="TRXUSD">TRX/USD</option>
+                            </optgroup>
+                            <optgroup label="Stocks">
+                                <option value="AAPL">Apple (AAPL)</option>
+                                <option value="GOOGL">Google (GOOGL)</option>
+                                <option value="MSFT">Microsoft (MSFT)</option>
+                                <option value="AMZN">Amazon (AMZN)</option>
+                                <option value="TSLA">Tesla (TSLA)</option>
+                                <option value="NVDA">NVIDIA (NVDA)</option>
+                                <option value="META">Meta (META)</option>
+                                <option value="NFLX">Netflix (NFLX)</option>
+                                <option value="PYPL">PayPal (PYPL)</option>
+                                <option value="INTC">Intel (INTC)</option>
+                                <option value="CSCO">Cisco (CSCO)</option>
+                                <option value="ADBE">Adobe (ADBE)</option>
+                                <option value="ORCL">Oracle (ORCL)</option>
+                                <option value="IBM">IBM (IBM)</option>
+                            </optgroup>
+                            <optgroup label="Bonds">
+                                <option value="US10Y">U.S. 10-Year Treasury (US10Y)</option>
+                                <option value="US2Y">U.S. 2-Year Treasury (US2Y)</option>
+                                <option value="UK10Y">UK 10-Year Gilt (UK10Y)</option>
+                                <option value="DE10Y">German 10-Year Bund (DE10Y)</option>
+                                <option value="JP10Y">Japan 10-Year Bond (JP10Y)</option>
+                            </optgroup>
+                            <optgroup label="ETFs">
+                                <option value="SPY">SPDR S&amp;P 500 ETF (SPY)</option>
+                                <option value="QQQ">Invesco QQQ ETF (QQQ)</option>
+                                <option value="VOO">Vanguard S&amp;P 500 ETF (VOO)</option>
+                                <option value="GLD">SPDR Gold Shares ETF (GLD)</option>
+                                <option value="TLT">iShares 20+ Year Treasury ETF (TLT)</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Amount ($)</label>
+                        <div class="amount-input-container">
+                            <input type="number" name="amount" min="1" required="" value="100" class="form-input">
+                        </div>
+                    </div>
+                    <input type="hidden" name="account_type" id="accountType" value="real">
+                    <div class="form-group">
+                        <label class="form-label">Trade Duration</label>
+                        <select name="duration" id="tradeDurationSelect" class="form-select">
+                            <option value="1">1 Minute</option>
+                            <option value="5">5 Minutes</option>
+                            <option value="15">15 Minutes</option>
+                            <option value="60">1 Hour</option>
+                        </select>
+                    </div>
+                    <input type="hidden" name="entry_price" id="entryPrice" value="0">
+                    <div class="trade-buttons">
+                        <button type="button" name="direction" value="buy" class="trade-btn buy-btn" onclick="submitTrade('buy')">
+                            <i class="fas fa-arrow-up"></i> Buy
+                        </button>
+                        <button type="button" name="direction" value="sell" class="trade-btn sell-btn" onclick="submitTrade('sell')">
+                            <i class="fas fa-arrow-down"></i> Sell
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- All Trades Widget -->
+        <div class="dashboard-widget">
+            <div class="widget-header">
+                <h3>All Trades</h3>
+                <a href="https://flintrade.com/user/trading" class="widget-view-all">View All</a>
+            </div>
+            <div class="widget-content" id="tradesList">
+                                                    <div class="empty-state">
+                        <i class="fas fa-exchange-alt"></i>
+                        <p>No trades yet</p>
+                    </div>
+                                <!-- Pagination Links -->
+                <div class="mt-4 pagination">
+                    <style>
+    /* Smooth hover transitions */
+    a, button {
+        transition: all 0.2s ease-in-out;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+        .pagination-mobile {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .pagination-mobile a, .pagination-mobile span {
+            flex: 1;
+            text-align: center;
+            padding: 0.75rem 0.5rem;
+            font-size: 0.875rem;
+        }
+    }
+
+    /* Focus states for accessibility */
+    a:focus, button:focus {
+        outline: 2px solid rgba(59, 130, 246, 0.5);
+        outline-offset: 2px;
+    }
+</style>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TradingView Widget Script -->
+    <script src="js/tv.js"></script>
+    <script src="js/pusher.min.js"></script>
+    <script>
+        // Asset mapping for TradingView
+        const assetMap = {
+            'EURUSD': { display: 'EUR/USD', tvSymbol: 'FX:EURUSD' },
+            'GBPUSD': { display: 'GBP/USD', tvSymbol: 'FX:GBPUSD' },
+            'USDJPY': { display: 'USD/JPY', tvSymbol: 'FX:USDJPY' },
+            'AUDUSD': { display: 'AUD/USD', tvSymbol: 'FX:AUDUSD' },
+            'USDCAD': { display: 'USD/CAD', tvSymbol: 'FX:USDCAD' },
+            'EURJPY': { display: 'EUR/JPY', tvSymbol: 'FX:EURJPY' },
+            'BTCUSD': { display: 'BTC/USD', tvSymbol: 'BINANCE:BTCUSDT' },
+            'ETHUSD': { display: 'ETH/USD', tvSymbol: 'BINANCE:ETHUSDT' },
+            'XRPUSD': { display: 'XRP/USD', tvSymbol: 'BINANCE:XRPUSDT' },
+            'LTCUSD': { display: 'LTC/USD', tvSymbol: 'BINANCE:LTCUSDT' },
+            'ADAUSD': { display: 'ADA/USD', tvSymbol: 'BINANCE:ADAUSDT' },
+            'BNBUSD': { display: 'BNB/USD', tvSymbol: 'BINANCE:BNBUSDT' },
+            'SOLUSD': { display: 'SOL/USD', tvSymbol: 'BINANCE:SOLUSDT' },
+            'DOTUSD': { display: 'DOT/USD', tvSymbol: 'BINANCE:DOTUSDT' },
+            'AVAXUSD': { display: 'AVAX/USD', tvSymbol: 'BINANCE:AVAXUSDT' },
+            'LINKUSD': { display: 'LINK/USD', tvSymbol: 'BINANCE:LINKUSDT' },
+            'MATICUSD': { display: 'MATIC/USD', tvSymbol: 'BINANCE:MATICUSDT' },
+            'DOGEUSD': { display: 'DOGE/USD', tvSymbol: 'BINANCE:DOGEUSDT' },
+            'SHIBUSD': { display: 'SHIB/USD', tvSymbol: 'BINANCE:SHIBUSDT' },
+            'TRXUSD': { display: 'TRX/USD', tvSymbol: 'BINANCE:TRXUSDT' },
+            'AAPL': { display: 'Apple (AAPL)', tvSymbol: 'NASDAQ:AAPL' },
+            'GOOGL': { display: 'Google (GOOGL)', tvSymbol: 'NASDAQ:GOOGL' },
+            'MSFT': { display: 'Microsoft (MSFT)', tvSymbol: 'NASDAQ:MSFT' },
+            'AMZN': { display: 'Amazon (AMZN)', tvSymbol: 'NASDAQ:AMZN' },
+            'TSLA': { display: 'Tesla (TSLA)', tvSymbol: 'NASDAQ:TSLA' },
+            'NVDA': { display: 'NVIDIA (NVDA)', tvSymbol: 'NASDAQ:NVDA' },
+            'META': { display: 'Meta (META)', tvSymbol: 'NASDAQ:META' },
+            'NFLX': { display: 'Netflix (NFLX)', tvSymbol: 'NASDAQ:NFLX' },
+            'PYPL': { display: 'PayPal (PYPL)', tvSymbol: 'NASDAQ:PYPL' },
+            'INTC': { display: 'Intel (INTC)', tvSymbol: 'NASDAQ:INTC' },
+            'CSCO': { display: 'Cisco (CSCO)', tvSymbol: 'NASDAQ:CSCO' },
+            'ADBE': { display: 'Adobe (ADBE)', tvSymbol: 'NASDAQ:ADBE' },
+            'ORCL': { display: 'Oracle (ORCL)', tvSymbol: 'NYSE:ORCL' },
+            'IBM': { display: 'IBM (IBM)', tvSymbol: 'NYSE:IBM' },
+            'US10Y': { display: 'U.S. 10-Year Treasury (US10Y)', tvSymbol: 'TVC:US10Y' },
+            'US2Y': { display: 'U.S. 2-Year Treasury (US2Y)', tvSymbol: 'TVC:US02Y' },
+            'UK10Y': { display: 'UK 10-Year Gilt (UK10Y)', tvSymbol: 'TVC:UK10Y' },
+            'DE10Y': { display: 'German 10-Year Bund (DE10Y)', tvSymbol: 'TVC:DE10Y' },
+            'JP10Y': { display: 'Japan 10-Year Bond (JP10Y)', tvSymbol: 'TVC:JP10Y' },
+            'SPY': { display: 'SPDR S&P 500 ETF (SPY)', tvSymbol: 'AMEX:SPY' },
+            'QQQ': { display: 'Invesco QQQ ETF (QQQ)', tvSymbol: 'NASDAQ:QQQ' },
+            'VOO': { display: 'Vanguard S&P 500 ETF (VOO)', tvSymbol: 'AMEX:VOO' },
+            'GLD': { display: 'SPDR Gold Shares ETF (GLD)', tvSymbol: 'AMEX:GLD' },
+            'TLT': { display: 'iShares 20+ Year Treasury ETF (TLT)', tvSymbol: 'NASDAQ:TLT' }
+        };
+
+        function getUserTimezone() {
+            return Intl.DateTimeFormat().resolvedOptions().timeZone || 'Africa/Lagos';
+        }
+
+        let chartWidget;
+        let currentSymbol = 'BTCUSD';
+        let currentTimeframe = '1';
+
+        function initializeChart(symbol, timeframe) {
+            const chartContainer = document.getElementById('tradingChart');
+            const chartError = document.getElementById('chartError');
+            chartContainer.innerHTML = '';
+            chartError.classList.add('hidden');
+
+            const userTimezone = getUserTimezone();
+
+            chartWidget = new TradingView.widget({
+                container_id: "tradingChart",
+                width: "100%",
+                height: "100%",
+                symbol: assetMap[symbol].tvSymbol,
+                interval: timeframe,
+                timezone: userTimezone,
+                theme: "dark",
+                style: "1",
+                locale: "en",
+                toolbar_bg: "#1e293b",
+                enable_publishing: false,
+                allow_symbol_change: false,
+                hide_side_toolbar: false,
+                studies: ["MA20@tv-basicstudies"],
+                custom_css_url: '/css/tradingview.css',
+                overrides: {
+                    "paneProperties.background": "#1e293b",
+                    "paneProperties.vertGridProperties.color": "#334155",
+                    "paneProperties.horzGridProperties.color": "#334155",
+                    "scalesProperties.textColor": "#e2e8f0"
+                }
+            });
+        }
+
+        const tradeAssetSelect = document.getElementById('tradeAssetSelect');
+        tradeAssetSelect.addEventListener('change', function() {
+            currentSymbol = tradeAssetSelect.value;
+            initializeChart(currentSymbol, currentTimeframe);
+        });
+
+        function setTimeframe(timeframe) {
+            currentTimeframe = timeframe;
+            document.querySelectorAll('.timeframe-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.trim() === timeframe + 'm' ||
+                    (timeframe === '60' && btn.textContent.trim() === '1h')) {
+                    btn.classList.add('active');
+                }
+            });
+            initializeChart(currentSymbol, currentTimeframe);
+        }
+
+        const accountTypeToggle = document.getElementById('accountTypeToggle');
+        const accountTypeInput = document.getElementById('accountType');
+        const toggleTexts = document.querySelectorAll('.toggle-text');
+        const toggleHandle = document.querySelector('.toggle-handle');
+
+        function updateToggleDisplay() {
+            const toggleWidth = document.querySelector('.toggle-switch').offsetWidth;
+            const isDemo = accountTypeToggle.checked;
+            accountTypeInput.value = isDemo ? 'demo' : 'real';
+
+            toggleTexts.forEach((text, index) => {
+                text.style.transform = isDemo ? `translateX(${toggleWidth / 2}px)` : 'translateX(0)';
+                text.style.opacity = index === (isDemo ? 1 : 0) ? '1' : '0';
+            });
+
+            toggleHandle.style.transform = isDemo ? `translateX(${toggleWidth / 2}px)` : 'translateX(0)';
+            toggleHandle.style.backgroundColor = isDemo ? '#60a5fa' : '#4ade80';
+        }
+
+        accountTypeToggle.addEventListener('change', updateToggleDisplay);
+        window.addEventListener('resize', updateToggleDisplay);
+
+        if (accountTypeInput.value === 'demo') {
+            accountTypeToggle.checked = true;
+        }
+        updateToggleDisplay();
+
+        async function submitTrade(direction) {
+            const form = document.getElementById('tradeForm');
+            const amount = parseFloat(form.amount.value);
+            const accountType = document.getElementById('accountType').value;
+            const liveBalance = parseFloat(document.getElementById('live-balance')?.textContent?.replace('$', '').replace(',', '') || 0);
+            const demoBalance = parseFloat(document.getElementById('demo-balance')?.textContent?.replace('$', '').replace(',', '') || 10000);
+
+            if ((accountType === 'real' && amount > liveBalance) || (accountType === 'demo' && amount > demoBalance)) {
+                showNotification('Insufficient balance for this trade.', 'error');
+                return;
+            }
+
+            let tradePrice;
+            try {
+                const response = await fetch(`/api/price?asset=${currentSymbol}`);
+                if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+                const data = await response.json();
+                tradePrice = parseFloat(data.price);
+                if (!tradePrice || isNaN(tradePrice) || tradePrice <= 0) {
+                    throw new Error('Invalid price returned from API');
+                }
+                console.log('Live price fetched for', currentSymbol, ':', tradePrice);
+            } catch (error) {
+                console.error('Error fetching live price:', error);
+                showNotification('Unable to fetch live price. Please try again.', 'error');
+                return;
+            }
+
+            document.getElementById('entryPrice').value = tradePrice;
+            const formData = new FormData(form);
+            formData.append('direction', direction);
+            formData.set('entry_price', tradePrice);
+
+            try {
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.status === 401) {
+                    showNotification('Your session has expired. Please log in again.', 'error');
+                    window.location.href = 'https://flintrade.com/auth/user/login';
+                    return;
+                }
+
+                const result = await response.json();
+                if (result.success) {
+                    showNotification(`Trade placed successfully for ${currentSymbol}!`, 'success');
+                    console.log('Trade response:', result);
+                } else {
+                    showNotification('Trade failed: ' + result.message, 'error');
+                }
+            } catch (error) {
+                console.error('Trade submission error:', error);
+                showNotification('An error occurred while placing the trade: ' + error.message, 'error');
+            }
+        }
+
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `notification-toast ${type}`;
+            notification.innerHTML = `
+                <div class="notification-icon">
+                    <i class="fas ${type === 'success' ? 'fa-check-circle' : 'fa-exclamation-circle'}"></i>
+                </div>
+                <div class="notification-content">${message}</div>
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => notification.classList.add('show'), 10);
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => notification.remove(), 300);
+            }, 5000);
+        }
+
+        document.querySelectorAll('.close-trade-form').forEach(form => {
+            form.addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                const tradeItem = this.closest('.trade-item');
+                const accountType = tradeItem.querySelector('.account-type').textContent.toLowerCase() === 'live' ? 'real' : 'demo';
+
+                try {
+                    const response = await fetch('https://flintrade.com/user/trading/close', {
+                        method: 'POST',
+                        body: formData,
+                        headers: {
+                            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').content,
+                            'Accept': 'application/json'
+                        }
+                    });
+
+                    if (response.status === 401) {
+                        showNotification('Your session has expired. Please log in again.', 'error');
+                        window.location.href = 'https://flintrade.com/auth/user/login';
+                        return;
+                    }
+
+                    const result = await response.json();
+                    if (result.success) {
+                        showNotification(`Trade closed successfully! Total return: $${result.trade_return.toFixed(2)}`, 'success');
+                        console.log('Close trade response:', result);
+                    } else {
+                        showNotification('Failed to close trade: ' + result.message, 'error');
+                    }
+                } catch (error) {
+                    console.error('Error closing trade:', error);
+                    showNotification('An error occurred while closing the trade: ' + error.message, 'error');
+                }
+            });
+        });
+
+        window.addEventListener('resize', () => {
+            if (chartWidget) {
+                const chartContainer = document.getElementById('tradingChart');
+                chartWidget.resize(chartContainer.offsetWidth, chartContainer.offsetHeight);
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const pusher = new Pusher('', {
+                cluster: 'mt1',
+                forceTLS: true
+            });
+
+            const channel = pusher.subscribe(`user.233`);
+
+            channel.bind('App\\Events\\TradeUpdated', function(data) {
+                const trade = data.trade;
+                const tradesList = document.getElementById('tradesList');
+                let tradeItem = document.querySelector(`.trade-item[data-trade-id="${trade.id}"]`);
+
+                if (tradeItem) {
+                    // Update existing trade
+                    const statusElement = tradeItem.querySelector('.trade-status');
+                    if (trade.status === 'closed') {
+                        statusElement.innerHTML = `
+                            <span class="trade-profit ${trade.profit_loss > 0 ? 'positive' : 'negative'}">
+                                ${trade.profit_loss > 0 ? '+' : ''}${parseFloat(trade.profit_loss).toFixed(2)}
+                            </span>
+                        `;
+                        tradeItem.classList.remove('open');
+                        tradeItem.classList.add(trade.profit_loss > 0 ? 'profit' : 'loss');
+                        showNotification(`Trade ${trade.asset} closed with ${trade.profit_loss > 0 ? 'profit' : 'loss'}: $${parseFloat(trade.profit_loss).toFixed(2)}`, trade.profit_loss > 0 ? 'success' : 'error');
+                    }
+                } else if (trade.status === 'open') {
+                    // Add new trade
+                    const newTradeItem = document.createElement('div');
+                    newTradeItem.className = 'trade-item open';
+                    newTradeItem.dataset.tradeId = trade.id;
+                    newTradeItem.innerHTML = `
+                        <div class="trade-asset">
+                            <span class="asset-name">${trade.asset}</span>
+                            <span class="account-type ${trade.account_type === 'real' ? 'live' : 'demo'}">
+                                ${trade.account_type === 'real' ? 'Live' : 'Demo'}
+                            </span>
+                        </div>
+                        <div class="trade-details">
+                            <span class="trade-direction ${trade.direction === 'call' ? 'buy' : 'sell'}">
+                                ${trade.direction === 'call' ? 'Buy' : 'Sell'}
+                            </span>
+                            <span class="trade-amount">$${parseFloat(trade.amount).toFixed(2)}</span>
+                            <span class="trade-price">${parseFloat(trade.entry_price).toFixed(4)}</span>
+                            <span class="trade-time">${new Date(trade.timestamp).toLocaleString('en-US', { hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                        </div>
+                        <div class="trade-status">
+                            <span class="trade-open">Open</span>
+                        </div>
+                    `;
+                    const emptyState = tradesList.querySelector('.empty-state');
+                    if (emptyState) emptyState.remove();
+                    tradesList.insertBefore(newTradeItem, tradesList.firstChild);
+                    showNotification(`Trade ${trade.asset} placed successfully!`, 'success');
+                }
+            });
+
+            channel.bind('App\\Events\\BalanceUpdatedEvent', function(data) {
+                console.log('BalanceUpdatedEvent received:', data);
+                document.getElementById('live-balance').textContent = `$${parseFloat(data.balance_real).toFixed(2)}`;
+                document.getElementById('demo-balance').textContent = `$${parseFloat(data.balance_demo).toFixed(2)}`;
+            });
+        });
+
+        initializeChart(currentSymbol, currentTimeframe);
+    </script>
+            </main>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/pusher.min_1.js"></script>
+    <script>
+        // Toggle sidebar
+        const sidebar = document.getElementById('sidebar');
+        const mainContent = document.getElementById('mainContent');
+        const toggleSidebar = document.getElementById('toggleSidebar');
+        const menuBtn = document.getElementById('menuBtn');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+
+        function toggleSidebarState() {
+            sidebar.classList.toggle('collapsed');
+            mainContent.classList.toggle('collapsed');
+
+            // Change icon based on state
+            const icon = toggleSidebar.querySelector('i');
+            if (sidebar.classList.contains('collapsed')) {
+                icon.classList.remove('ri-arrow-left-s-line');
+                icon.classList.add('ri-arrow-right-s-line');
+            } else {
+                icon.classList.remove('ri-arrow-right-s-line');
+                icon.classList.add('ri-arrow-left-s-line');
+            }
+
+            // Save state to localStorage
+            localStorage.setItem('sidebarCollapsed', sidebar.classList.contains('collapsed'));
+        }
+
+        function toggleMobileSidebar() {
+            sidebar.classList.toggle('show');
+            sidebarOverlay.classList.toggle('show');
+        }
+
+        // Initialize sidebar state from localStorage
+        function initializeSidebar() {
+            if (window.innerWidth > 1023) {
+                // Always show sidebar on desktop
+                sidebar.classList.remove('show');
+                sidebarOverlay.classList.remove('show');
+
+                // Apply collapsed state if saved
+                if (localStorage.getItem('sidebarCollapsed') === 'true') {
+                    sidebar.classList.add('collapsed');
+                    mainContent.classList.add('collapsed');
+                    const icon = toggleSidebar.querySelector('i');
+                    icon.classList.remove('ri-arrow-left-s-line');
+                    icon.classList.add('ri-arrow-right-s-line');
+                }
+            } else {
+                // Mobile behavior
+                sidebar.classList.remove('show');
+                sidebarOverlay.classList.remove('show');
+                sidebar.classList.remove('collapsed');
+                mainContent.classList.remove('collapsed');
+            }
+        }
+
+        // Run initialization on page load
+        document.addEventListener('DOMContentLoaded', initializeSidebar);
+
+        toggleSidebar.addEventListener('click', toggleSidebarState);
+        menuBtn.addEventListener('click', toggleMobileSidebar);
+        sidebarOverlay.addEventListener('click', toggleMobileSidebar);
+
+        // Close sidebar when clicking outside on tablet/mobile
+        document.addEventListener('click', function(event) {
+            if (window.innerWidth <= 1023 && !sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
+                sidebar.classList.remove('show');
+                sidebarOverlay.classList.remove('show');
+            }
+        });
+
+        // Pusher setup for real-time notifications
+                    const pusher = new Pusher('', {
+                cluster: '',
+                encrypted: true,
+            });
+
+            const channel = pusher.subscribe('user.233');
+            channel.bind('notification', function(data) {
+                showNotification(data.title || 'Notification', data.message, data.type || 'info');
+            });
+        
+        // Show notification
+        function showNotification(title, message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `notification-toast animate-slide-up ${type}`;
+            notification.innerHTML = `
+                <div class="notification-icon">
+                    <i class="ri-${type === 'success' ? 'checkbox-circle-line' : type === 'error' ? 'close-circle-line' : 'information-line'}"></i>
+                </div>
+                <div class="notification-content">
+                    <div class="notification-title">${title}</div>
+                    <div class="notification-message">${message}</div>
+                </div>
+                <button class="notification-close">
+                    <i class="ri-close-line"></i>
+                </button>
+            `;
+
+            document.body.appendChild(notification);
+
+            // Show notification
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+
+            // Close button event
+            const closeBtn = notification.querySelector('.notification-close');
+            closeBtn.addEventListener('click', () => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            });
+
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 5000);
+        }
+
+        // Resize event
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 1023) {
+                sidebar.classList.remove('show');
+                sidebarOverlay.classList.remove('show');
+            } else {
+                sidebar.classList.remove('collapsed');
+                mainContent.classList.remove('collapsed');
+            }
+        });
+
+        // Listen for balance updates
+        document.addEventListener('DOMContentLoaded', function () {
+            const pusher = new Pusher('', {
+                cluster: 'mt1',
+                forceTLS: true
+            });
+
+            const channel = pusher.subscribe(`App.Models.User.233`);
+
+            // Listen for BalanceUpdatedEvent
+            channel.bind('BalanceUpdatedEvent', function(data) {
+                const balanceElements = document.querySelectorAll('.balance-amount');
+                balanceElements.forEach(el => {
+                    el.textContent = `$${parseFloat(data.balance_real).toFixed(2)}`;
+                });
+
+                showNotification('Balance Updated', `Your account balance has been updated to $${parseFloat(data.balance_real).toFixed(2)}`, 'success');
+            });
+
+            // Listen for TradeClosedEvent
+            channel.bind('TradeClosedEvent', function(data) {
+                const profitLoss = parseFloat(data.profit_loss);
+                const message = profitLoss >= 0
+                    ? `Your trade closed with a profit of $${profitLoss.toFixed(2)}`
+                    : `Your trade closed with a loss of $${Math.abs(profitLoss).toFixed(2)}`;
+
+                showNotification('Trade Closed', message, profitLoss >= 0 ? 'success' : 'error');
+            });
+        });
+    </script>
+    <!-- Smartsupp Live Chat script -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = '142fc9ae084ebae13644220aec34388aadfaefd8';
+window.smartsupp||(function(d) {
+  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+  c.type='text/javascript';c.charset='utf-8';c.async=true;
+  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
+
+
+
+</body></html>

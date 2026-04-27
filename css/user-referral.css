@@ -1,0 +1,269 @@
+
+        /* Dashboard Container */
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--dark-bg), var(--darker-bg));
+        }
+
+        /* Header Section */
+        .header-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        /* Referral Section */
+        .referral-section {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .referral-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .referral-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin-bottom: 0.75rem;
+        }
+
+        .card-desc {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-bottom: 1rem;
+        }
+
+        .referral-link-group {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .referral-input {
+            flex: 1;
+            padding: 0.75rem;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .referral-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+        }
+
+        .copy-btn {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #04c22d, #04c22d);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .copy-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .referrals-table-container {
+            overflow-x: auto;
+        }
+
+        .referrals-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+
+        .referrals-table th,
+        .referrals-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #334155;
+        }
+
+        .referrals-table th {
+            background: #0f172a;
+            font-weight: 600;
+            color: #e2e8f0;
+        }
+
+        .referrals-table td {
+            color: #e2e8f0;
+        }
+
+        /* Empty State */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: #0f172a;
+            border-radius: 12px;
+            color: #94a3b8;
+        }
+
+        .empty-state i {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            color: #475569;
+        }
+
+        .empty-state p {
+            font-size: 1rem;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1023px) {
+            .dashboard-container {
+                padding: 1.25rem;
+            }
+
+            .header-section {
+                padding: 1.25rem;
+            }
+
+            .header-title {
+                font-size: 2rem;
+            }
+
+            .header-subtitle {
+                font-size: 1rem;
+            }
+
+            .card-title {
+                font-size: 1.25rem;
+            }
+
+            .card-desc {
+                font-size: 0.9rem;
+            }
+
+            .referral-input {
+                padding: 0.65rem;
+                font-size: 0.9rem;
+            }
+
+            .copy-btn {
+                padding: 0.65rem 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            .referrals-table th,
+            .referrals-table td {
+                padding: 0.65rem 0.75rem;
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .dashboard-container {
+                padding: 1rem;
+            }
+
+            .header-section {
+                padding: 1rem;
+            }
+
+            .header-title {
+                font-size: 1.5rem;
+            }
+
+            .header-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .referral-section {
+                grid-template-columns: 1fr;
+            }
+
+            .card-title {
+                font-size: 1.1rem;
+            }
+
+            .card-desc {
+                font-size: 0.85rem;
+            }
+
+            .referral-link-group {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .referral-input {
+                padding: 0.5rem;
+                font-size: 0.85rem;
+            }
+
+            .copy-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+                width: 100%;
+            }
+
+            .referrals-table th,
+            .referrals-table td {
+                padding: 0.5rem 0.5rem;
+                font-size: 0.85rem;
+            }
+
+            .empty-state {
+                padding: 1.5rem;
+            }
+
+            .empty-state i {
+                font-size: 1.5rem;
+            }
+
+            .empty-state p {
+                font-size: 0.9rem;
+            }
+        }

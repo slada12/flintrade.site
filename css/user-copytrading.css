@@ -1,0 +1,586 @@
+      /* Dashboard Container */
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--dark-bg), var(--darker-bg));
+        }
+
+        /* Welcome Section */
+        .welcome-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        .trade-open {
+            color: #47eb26;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .welcome-content {
+            flex: 1;
+        }
+
+        .welcome-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .welcome-subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        .welcome-action {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .action-btn {
+            padding: 0.75rem 1.5rem;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Following Section */
+        .following-section {
+            margin-bottom: 3rem;
+        }
+
+        .trader-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .trader-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+
+        .trader-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .trader-info {
+            flex: 1;
+        }
+
+        .trader-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .trader-detail {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            margin-bottom: 0.25rem;
+        }
+
+        .trader-detail span {
+            color: #e2e8f0;
+            font-weight: 500;
+        }
+
+        .unfollow-form {
+            margin-left: 1rem;
+        }
+
+        .unfollow-btn {
+            padding: 0.5rem 1rem;
+            background-color: #ef4444;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .unfollow-btn:hover {
+            background-color: #dc2626;
+            transform: translateY(-2px);
+        }
+
+        /* Follow Trader Section */
+        .follow-trader-section {
+            margin-bottom: 3rem;
+        }
+
+        .follow-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        .alert-success {
+            background-color: rgba(74, 222, 128, 0.15);
+            color: #4ade80;
+        }
+
+        .alert-danger {
+            background-color: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+        }
+
+        .alert ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin: 0;
+        }
+
+        .follow-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .form-label {
+            font-size: 0.95rem;
+            color: #94a3b8;
+            font-weight: 500;
+        }
+
+        .form-select, .form-input {
+            padding: 0.75rem;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            background-color: #0f172a;
+            color: #e2e8f0;
+            font-size: 0.95rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-select:focus, .form-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+        }
+
+        .follow-btn {
+            padding: 0.75rem;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .follow-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+        }
+
+        /* Copy Trades Section */
+        .copy-trades-section {
+            margin-bottom: 2rem;
+        }
+
+        .trade-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .trade-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .trade-info {
+            flex: 1;
+        }
+
+        .trade-trader {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        }
+
+        .trade-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+
+        .trade-asset {
+            font-weight: 500;
+            color: #e2e8f0;
+        }
+
+        .trade-account {
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .trade-account.live {
+            background-color: rgba(74, 222, 128, 0.15);
+            color: #4ade80;
+        }
+
+        .trade-account.demo {
+            background-color: rgba(96, 165, 250, 0.15);
+            color: #60a5fa;
+        }
+
+        .trade-direction {
+            font-weight: 500;
+        }
+
+        .trade-direction.buy {
+            color: #4ade80;
+        }
+
+        .trade-direction.sell {
+            color: #ef4444;
+        }
+
+        .trade-status {
+            margin-left: 1rem;
+        }
+
+        .trade-profit {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .trade-profit.open {
+            color: #4ade80;
+        }
+
+        .trade-profit.positive {
+            color: #4ade80;
+        }
+
+        .trade-profit.negative {
+            color: #ef4444;
+        }
+
+        @keyframes profitPulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .profit-animate {
+            animation: profitPulse 0.5s ease-in-out;
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .pagination a, .pagination span {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            background-color: #334155;
+            color: #e2e8f0;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .pagination a:hover {
+            background-color: #475569;
+        }
+
+        .pagination .current {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Empty State */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: #1e293b;
+            border-radius: 12px;
+            color: #94a3b8;
+        }
+
+        .empty-state i {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            color: #475569;
+        }
+
+        .empty-state p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1023px) {
+            .dashboard-container {
+                padding: 1.25rem;
+            }
+
+            .welcome-section {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.25rem;
+            }
+
+            .welcome-title {
+                font-size: 2rem;
+            }
+
+            .welcome-subtitle {
+                font-size: 1rem;
+            }
+
+            .action-btn {
+                padding: 0.65rem 1.25rem;
+                font-size: 0.95rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .trader-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+
+            .trader-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 1.25rem;
+            }
+
+            .unfollow-form {
+                margin-left: 0;
+                margin-top: 1rem;
+            }
+
+            .unfollow-btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .follow-card {
+                padding: 1.25rem;
+            }
+
+            .form-label {
+                font-size: 0.9rem;
+            }
+
+            .form-select, .form-input {
+                padding: 0.65rem;
+                font-size: 0.9rem;
+            }
+
+            .follow-btn {
+                padding: 0.65rem;
+                font-size: 0.95rem;
+            }
+
+            .trade-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0.75rem;
+            }
+
+            .trade-trader {
+                font-size: 1rem;
+            }
+
+            .trade-details {
+                flex-direction: column;
+                gap: 0.5rem;
+                font-size: 0.85rem;
+            }
+
+            .trade-status {
+                margin-left: 0;
+                margin-top: 0.75rem;
+            }
+
+            .trade-profit {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .dashboard-container {
+                padding: 1rem;
+            }
+
+            .welcome-section {
+                padding: 1rem;
+            }
+
+            .welcome-title {
+                font-size: 1.5rem;
+            }
+
+            .welcome-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .action-btn {
+                padding: 0.5rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .trader-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trader-card {
+                padding: 1rem;
+            }
+
+            .trader-name {
+                font-size: 1.2rem;
+            }
+
+            .trader-detail {
+                font-size: 0.9rem;
+            }
+
+            .unfollow-btn {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .follow-card {
+                padding: 1rem;
+            }
+
+            .form-label {
+                font-size: 0.85rem;
+            }
+
+            .form-select, .form-input {
+                padding: 0.5rem;
+                font-size: 0.85rem;
+            }
+
+            .follow-btn {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .trade-card {
+                padding: 0.5rem;
+            }
+
+            .trade-trader {
+                font-size: 0.95rem;
+            }
+
+            .trade-details {
+                font-size: 0.8rem;
+            }
+
+            .trade-account {
+                font-size: 0.75rem;
+            }
+
+            .trade-profit {
+                font-size: 0.85rem;
+            }
+
+            .pagination a, .pagination span {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.85rem;
+            }
+
+            .empty-state {
+                padding: 1.5rem;
+            }
+
+            .empty-state i {
+                font-size: 1.5rem;
+            }
+
+            .empty-state p {
+                font-size: 0.9rem;
+            }
+        }

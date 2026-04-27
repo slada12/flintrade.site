@@ -1,0 +1,293 @@
+
+        /* Dashboard Container */
+        .dashboard-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            color: var(--text-primary);
+            background: linear-gradient(135deg, var(--dark-bg), var(--darker-bg));
+        }
+
+        /* Header Section */
+        .header-section {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header-content {
+            text-align: center;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .header-subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin: 0;
+        }
+
+        /* Subscription Section */
+        .subscription-section {
+            margin-bottom: 3rem;
+        }
+
+        .alert {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .alert-success {
+            background-color: rgba(74, 222, 128, 0.15);
+            color: #4ade80;
+        }
+
+        .alert-danger {
+            background-color: rgba(239, 68, 68, 0.15);
+            color: #ef4444;
+        }
+
+        .subscription-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .subscription-card {
+            background: #1e293b;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(79, 70, 229, 0.2);
+        }
+
+        .subscription-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(79, 70, 229, 0.5);
+        }
+
+        .subscription-name {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin-bottom: 0.75rem;
+        }
+
+        .subscription-details {
+            margin-bottom: 1rem;
+        }
+
+        .subscription-price,
+        .subscription-duration {
+            font-size: 0.95rem;
+            color: #e2e8f0;
+            margin-bottom: 0.25rem;
+        }
+
+        .subscription-desc {
+            font-size: 0.85rem;
+            color: #94a3b8;
+            margin-bottom: 0.5rem;
+        }
+
+        .subscription-status {
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .active {
+            color: #4ade80;
+            background-color: rgba(74, 222, 128, 0.15);
+        }
+
+        .expired {
+            color: #ef4444;
+            background-color: rgba(239, 68, 68, 0.15);
+        }
+
+        .subscription-form {
+            margin-top: 1rem;
+        }
+
+        .subscribe-btn {
+            padding: 0.75rem;
+            background: linear-gradient(135deg, #04c22d, #04c22d);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .subscribe-btn.resubscribe {
+            background: linear-gradient(135deg, #ef4444, #dc2626);
+        }
+
+        .subscribe-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .subscribe-btn.resubscribe:hover {
+            box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+        }
+
+        /* Empty State */
+        .empty-state {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: #0f172a;
+            border-radius: 12px;
+            color: #94a3b8;
+            grid-column: 1 / -1;
+        }
+
+        .empty-state i {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+            color: #475569;
+        }
+
+        .empty-state p {
+            font-size: 1rem;
+            margin: 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1023px) {
+            .dashboard-container {
+                padding: 1.25rem;
+            }
+
+            .header-section {
+                padding: 1.25rem;
+            }
+
+            .header-title {
+                font-size: 2rem;
+            }
+
+            .header-subtitle {
+                font-size: 1rem;
+            }
+
+            .subscription-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+
+            .subscription-card {
+                padding: 1.25rem;
+            }
+
+            .subscription-name {
+                font-size: 1.1rem;
+            }
+
+            .subscription-price,
+            .subscription-duration {
+                font-size: 0.9rem;
+            }
+
+            .subscription-desc {
+                font-size: 0.8rem;
+            }
+
+            .subscription-status {
+                font-size: 0.9rem;
+            }
+
+            .subscribe-btn {
+                padding: 0.65rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .dashboard-container {
+                padding: 1rem;
+            }
+
+            .header-section {
+                padding: 1rem;
+            }
+
+            .header-title {
+                font-size: 1.5rem;
+            }
+
+            .header-subtitle {
+                font-size: 0.9rem;
+            }
+
+            .subscription-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .subscription-card {
+                padding: 1rem;
+            }
+
+            .subscription-name {
+                font-size: 1rem;
+            }
+
+            .subscription-price,
+            .subscription-duration {
+                font-size: 0.85rem;
+            }
+
+            .subscription-desc {
+                font-size: 0.75rem;
+            }
+
+            .subscription-status {
+                font-size: 0.85rem;
+            }
+
+            .subscribe-btn {
+                padding: 0.5rem;
+                font-size: 0.9rem;
+            }
+
+            .empty-state {
+                padding: 1.5rem;
+            }
+
+            .empty-state i {
+                font-size: 1.5rem;
+            }
+
+            .empty-state p {
+                font-size: 0.9rem;
+            }
+        }
