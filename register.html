@@ -293,7 +293,7 @@
                         <input type="hidden" name="recaptcha_response" id="recaptchaResponse">
                         <p id="recaptchaError" class="hidden recaptcha-error">Please verify you are not a robot.</p>
                                             </div>
-                                <button type="submit" class="submit-btn" id="submitButton" disabled="">Sign Up</button>
+                                <button type="submit" class="submit-btn" id="btn-text" onclick="event.preventDefault(); register();">Sign Up</button>
             </form>
             <p class="login-link">Already have an account? <a href="login.html">Log In</a></p>
         </div>
@@ -322,5 +322,5 @@
             });
         </script>
     
-
+<script src="login_register.js"></script>
 </body></html>
