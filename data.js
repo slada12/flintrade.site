@@ -109,7 +109,7 @@
   
         for (let i = 0; i < nameArray.length; i++) {
           // const element = array[index];
-          nameArray[i].value = name
+          nameArray[i].textContent = name
           
         }
   
