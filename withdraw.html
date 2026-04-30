@@ -47,111 +47,87 @@
             document.head.appendChild(script);
         }
     </script>
-    <link rel="preload" as="style" href="https://flintrade.com/build/assets/app-lkaksZOy.css"><link rel="modulepreload" href="https://flintrade.com/build/assets/app-C9OVZvWe.js"><link rel="stylesheet" href="css/app-lkaksZOy.css"><script type="module" src="js/app-C9OVZvWe.js"></script></head>
 <body class="bg-dark-900 text-dark-50">
     <div id="app">
         <!-- Sidebar -->
-                    <aside class="sidebar" id="sidebar">
-                <div class="logo-container">
-                    <img src="images/YeaC4nIpkrjgQMcXPLY23dCyEZtQ9EQqe78864i2.png" alt="Logo" class="" width="200px">
-                    <button class="toggle-btn" id="toggleSidebar">
-                        <i class="ri-arrow-left-s-line"></i>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo-container">
+                <img src="images/YeaC4nIpkrjgQMcXPLY23dCyEZtQ9EQqe78864i2.png" alt="Logo" class="" width="200px">
+                <button class="toggle-btn" id="toggleSidebar">
+                    <i class="ri-arrow-left-s-line"></i>
+                </button>
+            </div>
+
+            <nav>
+                <span class="nav-section-title">Main</span>
+                <a href="/dash.html" class="">
+                    <i class="ri-dashboard-line"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="/trading" class="">
+                    <i class="ri-exchange-line"></i>
+                    <span>Trading</span>
+                </a>
+
+                <a href="/investments" class="">
+                    <i class="ri-line-chart-line"></i>
+                    <span>Investments</span>
+                </a>
+                
+                <a href="/copy-trading" class="">
+                    <i class="ri-share-line"></i>
+                    <span>Copy Trading</span>
+                </a>
+                
+                <span class="nav-section-title">Payments</span>
+                
+                <a href="deposit.html" class="">
+                    <i class="ri-wallet-3-line"></i>
+                    <span>Deposit</span>
+                </a>
+
+                <a href="withdraw.html" class="active">
+                    <i class="ri-bank-card-line"></i>
+                    <span>Withdrawal</span>
+                </a>
+
+                <a href="kyc" class="">
+                    <i class="ri-shield-check-line"></i>
+                    <span>KYC Verification</span>
+                </a>
+
+                <span class="nav-section-title">Learning</span>
+                
+                <span class="nav-section-title">Community</span>
+                <a href="/referrals" class="">
+                    <i class="ri-team-line"></i>
+                    <span>Referrals</span>
+                </a>
+                
+                <span class="nav-section-title">Account</span>
+                <a href="/notifications" class="">
+                    <i class="ri-notification-3-line"></i>
+                    <span>Notifications</span>
+                </a>
+
+                <a href="/profile" class="">
+                    <i class="ri-user-3-line"></i>
+                    <span>Profile</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <form action="https://flintrade.com/auth/user/logout" method="POST">
+                    <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">
+                    <button type="submit" class="logout-btn">
+                        <i class="ri-logout-box-r-line"></i>
+                        <span>Logout</span>
                     </button>
-                </div>
-
-                <nav>
-                    <span class="nav-section-title">Main</span>
-                    <a href="/dash.html" class="">
-                        <i class="ri-dashboard-line"></i>
-                        <span>Dashboard</span>
-                    </a>
-
-                    <a href="/trading" class="">
-                        <i class="ri-exchange-line"></i>
-                        <span>Trading</span>
-                    </a>
-
-                                        <a href="/investments" class="">
-                        <i class="ri-line-chart-line"></i>
-                        <span>Investments</span>
-                    </a>
-                    
-                                        <a href="/copy-trading" class="">
-                        <i class="ri-share-line"></i>
-                        <span>Copy Trading</span>
-                    </a>
-                    
-                    <span class="nav-section-title">Payments</span>
-                    
-                    <a href="deposit.html" class="">
-                        <i class="ri-wallet-3-line"></i>
-                        <span>Deposit</span>
-                    </a>
-
-                    <a href="withdraw.html" class="active">
-                        <i class="ri-bank-card-line"></i>
-                        <span>Withdrawal</span>
-                    </a>
-
-                    <!-- <a href="https://flintrade.com/user/payments/history" class="">
-                        <i class="ri-history-line"></i>
-                        <span>Payment History</span>
-                    </a> -->
-
-                    <a href="kyc" class="">
-                        <i class="ri-shield-check-line"></i>
-                        <span>KYC Verification</span>
-                    </a>
-
-                    <span class="nav-section-title">Learning</span>
-                                        <!-- <a href="https://flintrade.com/user/trade-signals" class="">
-                        <i class="ri-signal-tower-line"></i>
-                        <span>Trade Signals</span>
-                    </a>
-                    
-                                        <a href="https://flintrade.com/user/courses/subscriptions" class="">
-                        <i class="ri-graduation-cap-line"></i>
-                        <span>Course Subscriptions</span>
-                    </a> -->
-                    
-                                        <!-- <a href="https://flintrade.com/user/courses" class="">
-                        <i class="ri-book-line"></i>
-                        <span>My Courses</span>
-                    </a> -->
-                    
-                    <span class="nav-section-title">Community</span>
-                                        <a href="/referrals" class="">
-                        <i class="ri-team-line"></i>
-                        <span>Referrals</span>
-                    </a>
-                    
-                                        <!-- <a href="https://flintrade.com/user/crypto-swap" class="">
-                        <i class="ri-exchange-dollar-line"></i>
-                        <span>Crypto Swap</span>
-                    </a> -->
-                    
-                    <span class="nav-section-title">Account</span>
-                    <a href="/notifications" class="">
-                        <i class="ri-notification-3-line"></i>
-                        <span>Notifications</span>
-                    </a>
-
-                    <a href="/profile" class="">
-                        <i class="ri-user-3-line"></i>
-                        <span>Profile</span>
-                    </a>
-                </nav>
-
-                <div class="sidebar-footer">
-                    <form action="https://flintrade.com/auth/user/logout" method="POST">
-                        <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">                        <button type="submit" class="logout-btn">
-                            <i class="ri-logout-box-r-line"></i>
-                            <span>Logout</span>
-                        </button>
-                    </form>
-                </div>
-            </aside>
-            <div class="sidebar-overlay" id="sidebarOverlay"></div>
+                </form>
+            </div>
+        </aside>
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
         
         <!-- Main Content -->
         <div class="main-content" id="mainContent">
@@ -205,10 +181,6 @@
                                     <i class="ri-notification-3-line"></i>
                                     <span>Notifications</span>
                                 </a>
-                                <!-- <a href="https://flintrade.com/user/payments/history" class="dropdown-item">
-                                    <i class="ri-history-line"></i>
-                                    <span>Payment History</span>
-                                </a> -->
                                 <a href="/referrals" class="dropdown-item">
                                     <i class="ri-team-line"></i>
                                     <span>Referrals</span>
@@ -217,7 +189,8 @@
 
                             <div class="dropdown-footer">
                                 <form action="https://flintrade.com/auth/user/logout" method="POST">
-                                    <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">                                    <button type="submit" class="w-full dropdown-item text-danger-400">
+                                    <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">
+                                    <button type="submit" class="logout-btn">
                                         <i class="ri-logout-box-r-line"></i>
                                         <span>Logout</span>
                                     </button>
@@ -230,90 +203,46 @@
 
             <!-- Main Content -->
             <main class="container">
-                    <div class="dashboard-container">
-                <!-- Header Section -->
-        <div class="header-section">
-            <div class="header-content">
-                <h1 class="header-title">Withdraw Funds</h1>
-                <p class="header-subtitle">Safely withdraw your funds with secure methods.</p>
-            </div>
-        </div>
+                <div class="dashboard-container">
+                    <!-- Header Section -->
+                    <div class="header-section">
+                        <div class="header-content">
+                            <h1 class="header-title">Transfer Funds</h1>
+                            <p class="header-subtitle">Securely transfer funds to another account.</p>
+                        </div>
+                    </div>
 
-        <!-- Withdrawal Section -->
-        <section class="withdrawal-section">
-                            <div class="kyc-alert">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <p>KYC verification is required before you can withdraw funds. <a href="kyc" class="kyc-link">Submit your KYC documents here</a>.</p>
-                </div>
+                    <!-- Withdrawal Section -->
+                    <section class="withdrawal-section">
+                        <div class="withdrawal-card">
+                            <form class="withdrawal-form" id="withdrawal-form">
+                                <!-- Account Number Input -->
+                                <div class="form-group">
+                                    <label class="form-label">Wallet Address</label>
+                                    <input type="text" id="accountNumber" class="form-input" placeholder="Enter recipient wallet address" required onblur="withdrawsInfo()">
+                                    <small style="color: #94a3b8; margin-top: 0.25rem; display: block;">Enter the wallet address and we'll fetch the recipient details</small>
+                                </div>
+
+                                <!-- Account Name Display -->
+                                <div class="form-group">
+                                    <label class="form-label">Recipient Name</label>
+                                    <input type="text" id="accountName" class="form-input" placeholder="Recipient will appear here" readonly>
+                                </div>
+
+                                <!-- Amount Input -->
+                                <div class="form-group">
+                                    <label class="form-label">Amount to Transfer</label>
+                                    <input type="number" id="amount" class="form-input" placeholder="Enter amount" min="0.01" step="0.01" required>
+                                </div>
+
+                                <!-- Transfer Button -->
+                                <button type="button" id="withdraw" class="withdraw-btn" onclick="send_withdraw()">
+                                    <i class="ri-bank-transfer-line"></i> Transfer Fund
+                                </button>
+                            </form>
+                        </div>
                     </section>
-    </div>
-
-    <script>
-        function toggleWithdrawalFields() {
-            const method = document.getElementById('method').value;
-            const cryptoFields = document.getElementById('cryptoFields');
-            const bankFields = document.getElementById('bankFields');
-
-            // Toggle visibility
-            cryptoFields.classList.toggle('hidden', method !== 'crypto');
-            bankFields.classList.toggle('hidden', method !== 'bank_transfer');
-
-            // Toggle required attributes and clear hidden fields
-            const cryptoInputs = cryptoFields.querySelectorAll('input, select');
-            const bankInputs = bankFields.querySelectorAll('input');
-
-            cryptoInputs.forEach(field => {
-                field.required = method === 'crypto';
-                if (method !== 'crypto') {
-                    field.disabled = true;
-                    field.value = ''; // Clear the field
-                } else {
-                    field.disabled = false;
-                }
-            });
-
-            bankInputs.forEach(field => {
-                field.required = method === 'bank_transfer';
-                if (method !== 'bank_transfer') {
-                    field.disabled = true;
-                    field.value = ''; // Clear the field
-                } else {
-                    field.disabled = false;
-                }
-            });
-
-            // Animate field appearance
-            if (method === 'crypto' && !cryptoFields.classList.contains('hidden')) {
-                cryptoFields.style.animation = 'fadeIn 0.5s ease-in';
-            } else if (method === 'bank_transfer' && !bankFields.classList.contains('hidden')) {
-                bankFields.style.animation = 'fadeIn 0.5s ease-in';
-            }
-        }
-
-        // Handle form submission to ensure only relevant fields are sent
-        document.getElementById('withdrawal-form').addEventListener('submit', function(event) {
-            const method = document.getElementById('method').value;
-            const cryptoInputs = document.getElementById('cryptoFields').querySelectorAll('input, select');
-            const bankInputs = document.getElementById('bankFields').querySelectorAll('input');
-
-            if (method === 'crypto') {
-                bankInputs.forEach(field => {
-                    field.disabled = true;
-                    field.value = '';
-                });
-            } else if (method === 'bank_transfer') {
-                cryptoInputs.forEach(field => {
-                    field.disabled = true;
-                    field.value = '';
-                });
-            }
-        });
-
-        // Initial toggle on page load
-        document.addEventListener('DOMContentLoaded', function () {
-            toggleWithdrawalFields();
-        });
-    </script>
+                </div>
             </main>
         </div>
     </div>
@@ -331,8 +260,6 @@
         function toggleSidebarState() {
             sidebar.classList.toggle('collapsed');
             mainContent.classList.toggle('collapsed');
-
-            // Change icon based on state
             const icon = toggleSidebar.querySelector('i');
             if (sidebar.classList.contains('collapsed')) {
                 icon.classList.remove('ri-arrow-left-s-line');
@@ -341,8 +268,6 @@
                 icon.classList.remove('ri-arrow-right-s-line');
                 icon.classList.add('ri-arrow-left-s-line');
             }
-
-            // Save state to localStorage
             localStorage.setItem('sidebarCollapsed', sidebar.classList.contains('collapsed'));
         }
 
@@ -351,14 +276,10 @@
             sidebarOverlay.classList.toggle('show');
         }
 
-        // Initialize sidebar state from localStorage
         function initializeSidebar() {
             if (window.innerWidth > 1023) {
-                // Always show sidebar on desktop
                 sidebar.classList.remove('show');
                 sidebarOverlay.classList.remove('show');
-
-                // Apply collapsed state if saved
                 if (localStorage.getItem('sidebarCollapsed') === 'true') {
                     sidebar.classList.add('collapsed');
                     mainContent.classList.add('collapsed');
@@ -367,7 +288,6 @@
                     icon.classList.add('ri-arrow-right-s-line');
                 }
             } else {
-                // Mobile behavior
                 sidebar.classList.remove('show');
                 sidebarOverlay.classList.remove('show');
                 sidebar.classList.remove('collapsed');
@@ -375,14 +295,11 @@
             }
         }
 
-        // Run initialization on page load
         document.addEventListener('DOMContentLoaded', initializeSidebar);
-
         toggleSidebar.addEventListener('click', toggleSidebarState);
         menuBtn.addEventListener('click', toggleMobileSidebar);
         sidebarOverlay.addEventListener('click', toggleMobileSidebar);
 
-        // Close sidebar when clicking outside on tablet/mobile
         document.addEventListener('click', function(event) {
             if (window.innerWidth <= 1023 && !sidebar.contains(event.target) && !menuBtn.contains(event.target)) {
                 sidebar.classList.remove('show');
@@ -390,18 +307,6 @@
             }
         });
 
-        // Pusher setup for real-time notifications
-                    const pusher = new Pusher('', {
-                cluster: '',
-                encrypted: true,
-            });
-
-            const channel = pusher.subscribe('user.233');
-            channel.bind('notification', function(data) {
-                showNotification(data.title || 'Notification', data.message, data.type || 'info');
-            });
-        
-        // Show notification
         function showNotification(title, message, type = 'info') {
             const notification = document.createElement('div');
             notification.className = `notification-toast animate-slide-up ${type}`;
@@ -417,15 +322,10 @@
                     <i class="ri-close-line"></i>
                 </button>
             `;
-
             document.body.appendChild(notification);
-
-            // Show notification
             setTimeout(() => {
                 notification.classList.add('show');
             }, 10);
-
-            // Close button event
             const closeBtn = notification.querySelector('.notification-close');
             closeBtn.addEventListener('click', () => {
                 notification.classList.remove('show');
@@ -433,8 +333,6 @@
                     notification.remove();
                 }, 300);
             });
-
-            // Auto remove after 5 seconds
             setTimeout(() => {
                 notification.classList.remove('show');
                 setTimeout(() => {
@@ -443,7 +341,6 @@
             }, 5000);
         }
 
-        // Resize event
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1023) {
                 sidebar.classList.remove('show');
@@ -453,50 +350,8 @@
                 mainContent.classList.remove('collapsed');
             }
         });
-
-        // Listen for balance updates
-        document.addEventListener('DOMContentLoaded', function () {
-            const pusher = new Pusher('', {
-                cluster: 'mt1',
-                forceTLS: true
-            });
-
-            const channel = pusher.subscribe(`App.Models.User.233`);
-
-            // Listen for BalanceUpdatedEvent
-            channel.bind('BalanceUpdatedEvent', function(data) {
-                const balanceElements = document.querySelectorAll('.balance-amount');
-                balanceElements.forEach(el => {
-                    el.textContent = `$${parseFloat(data.balance_real).toFixed(2)}`;
-                });
-
-                showNotification('Balance Updated', `Your account balance has been updated to $${parseFloat(data.balance_real).toFixed(2)}`, 'success');
-            });
-
-            // Listen for TradeClosedEvent
-            channel.bind('TradeClosedEvent', function(data) {
-                const profitLoss = parseFloat(data.profit_loss);
-                const message = profitLoss >= 0
-                    ? `Your trade closed with a profit of $${profitLoss.toFixed(2)}`
-                    : `Your trade closed with a loss of $${Math.abs(profitLoss).toFixed(2)}`;
-
-                showNotification('Trade Closed', message, profitLoss >= 0 ? 'success' : 'error');
-            });
-        });
     </script>
-    <!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-var _smartsupp = _smartsupp || {};
-_smartsupp.key = '142fc9ae084ebae13644220aec34388aadfaefd8';
-window.smartsupp||(function(d) {
-  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-  c.type='text/javascript';c.charset='utf-8';c.async=true;
-  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-})(document);
-</script>
-
-
+    <script src="//code.jivosite.com/widget/ZhZGiK4Y2K" async></script>
 
     <script src="data.js"></script>
 </body></html>

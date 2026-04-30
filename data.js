@@ -109,7 +109,7 @@
   
         for (let i = 0; i < nameArray.length; i++) {
           // const element = array[index];
-          nameArray[i].textContent = name
+          nameArray[i].value = name
           
         }
   
@@ -143,21 +143,21 @@
         if (fullnameSite === null) {
           console.log('Not Found!!!');
         } else {
-          fullnameSite.textContent = `${fullname}`;
+          fullnameSite.value = `${fullname}`;
         };
   
         const emailSite = document.getElementById('email');
         if (emailSite === null) {
           console.log('Not Found!!!');
         } else {
-          emailSite.innerText = email;
+          emailSite.value = email;
         };
   
         const walletSite = document.getElementById('walletAddress');
         if (walletSite === null) {
           console.log('WalletAdress Not Found!!!');
         } else {
-          walletSite.textContent = walletAddress;
+          walletSite.value = walletAddress;
         };
   
         const nameSetting = document.getElementById('name-setting');
