@@ -255,7 +255,7 @@
         <section id="follow-trader" class="follow-trader-section">
             <h2 class="section-title">Follow a Trader</h2>
             <div class="follow-card">
-                                    <form action="copy-trading" method="POST" class="follow-form">
+                                    <form action="#" class="follow-form">
                         <input type="hidden" name="_token" value="JmRlTchIs3jtMlmkxhO7Dcp8HrVQ2sBe809x29yx" autocomplete="off">                        <div class="form-group">
                             <label for="trader_id" class="form-label">Select Trader</label>
                             <select name="trader_id" id="trader_id" class="form-select" required="">
@@ -278,7 +278,7 @@
                             <label for="amount_multiplier" class="form-label">Amount Multiplier (0.1 - 10)</label>
                             <input type="number" name="amount_multiplier" id="amount_multiplier" class="form-input" step="0.1" min="0.1" max="10" value="1" required="">
                         </div>
-                        <button type="submit" class="follow-btn">Follow Trader</button>
+                        <button type="submit" class="follow-btn" onclick="event.preventDefault();">Follow Trader</button>
                     </form>
                             </div>
         </section>
