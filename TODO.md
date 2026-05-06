@@ -1,13 +1,6 @@
-# Connection Plan for login_register.js
+# TODO
 
-## login.html
-- [ ] Add `id="btn-text"` to the submit button
-- [ ] Add `onsubmit="event.preventDefault(); login();"` to the `<form>` tag
-- [ ] Include `<script src="login_register.js"></script>` before `</body>`
-
-## register.html
-- [ ] Change submit button `id` from `submitButton` to `btn-text`
-- [ ] Update inline reCAPTCHA script to reference `btn-text` instead of `submitButton`
-- [ ] Modify the form submit listener to call `register()` after reCAPTCHA validation
-- [ ] Include `<script src="login_register.js"></script>` before `</body>`
-
+- [ ] Add demo trade history to `trading.html` using `localStorage` (render `.trade-item` blocks instead of empty state)
+- [ ] Update `submitTrade()` in `trading.html` so Demo trades append to `localStorage` and re-render trade list
+- [ ] Keep existing real/live behavior intact
+- [ ] Quick manual test: toggle Demo, place a trade, refresh page; confirm demo trades persist
