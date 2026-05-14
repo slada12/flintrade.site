@@ -742,7 +742,7 @@
                         appendLocalTrade('real', {
                             asset: currentSymbol,
                             amount: Number(amount),
-                            direction: 'buy',
+                            direction: direction === 'buy' ? 'buy' : 'sell',
                             entry_price: Number(amount) || 0,
                             profit_loss: Number(amount) * 0.85
                         });
